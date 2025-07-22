@@ -94,7 +94,7 @@ export default function Dashboard({ user }: HomeProps) {
   async function handleShare(id: string) {
     // Copia a URL da tarefa pública para a área de transferência
     await navigator.clipboard.writeText(
-      process.env.NEXT_PUBLIC_URL + "/taks/" + id
+      process.env.NEXT_PUBLIC_URL + "/task/" + id
     );
 
     alert("URL Copiada com sucesso!");
